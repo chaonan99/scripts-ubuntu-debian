@@ -10,3 +10,12 @@ cd ~/torch;
 ./install.sh
 source ~/.bashrc
 
+# Install lua packages
+luarocks install nn
+luarocks install optim
+luarocks install nngraph
+luarocks install cutorch
+luarocks install cunn
+luarocks install image
+luarocks install loadcaffe
+
