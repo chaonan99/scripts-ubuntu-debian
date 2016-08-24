@@ -17,5 +17,14 @@ luarocks install nngraph
 luarocks install cutorch
 luarocks install cunn
 luarocks install image
+
+# This install protobuf and caffe loader
+sudo apt-get install libprotobuf-dev protobuf-compiler
 luarocks install loadcaffe
+
+# Install hdf5 tools for torch
+sudo apt-get install libhdf5-serial-dev hdf5-tools
+git clone git@github.com/deepmind/torch-hdf5.git
+cd torch-hdf5
+luarocks make hdf5-0-0.rockspec LIBHDF5_LIBDIR="/usr/lib/x86_64-linux-gnu/"
 
